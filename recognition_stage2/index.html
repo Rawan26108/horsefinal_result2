@@ -1,0 +1,48 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c14">
+  <title>Horse Motion AI | Stage 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="brand">
+        <span class="horse">ðŸŽ</span>
+        <div>
+          <h1>HORSE MOTION AI</h1>
+          <p>STAGE 2 â€¢ SENSOR RECORDING</p>
+        </div>
+      </div>
+      <a href="../data_collection_stage1/index.html" class="screen1-nav-btn">← SCREEN 1</a>
+    </header>
+
+    <section class="recording-card">
+      <h2>RECORDING SESSION</h2>
+
+      <div class="timer" id="timerDisplay">00:00:00</div>
+      <p id="statusText">READY TO RECORD</p>
+
+      <div class="buttons">
+        <button id="startBtn" class="start-btn">START RECORDING</button>
+        <button id="endBtn" class="end-btn" disabled>END RECORDING</button>
+      </div>
+
+      <p id="uploadStatus">Connecting to Firebase...</p>
+    </section>
+
+    <footer>HORSE MOTION AI â€¢ STAGE 2</footer>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
